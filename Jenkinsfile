@@ -3,7 +3,7 @@ pipeline {
 	
 	  tools
     {
-       maven 'Maven'
+       def mvnHome = tool 'maven-3.5.4'
     }
  stages {
       stage('checkout') {
