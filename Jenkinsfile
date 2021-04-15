@@ -3,7 +3,7 @@ pipeline {
 	
 	  tools
     {
-       maven " Apache Maven 3.8.1 " 
+       maven "null" 
     }
  stages {
       stage('checkout') {
