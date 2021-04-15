@@ -3,8 +3,7 @@ pipeline {
 	
 	  tools
     {
-       maven 'Maven 3.3.9'
-       jdk 'jdk8'
+       maven 'Apache Maven 3.5.4'
     }
  stages {
       stage('checkout') {
