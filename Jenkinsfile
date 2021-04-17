@@ -1,16 +1,7 @@
 pipeline {
     agent any
-    tools {
-            maven 'Apache Maven 3.5.4' 
-          }
    stages {
-        stage('Example') {
-            steps {
-                sh 'mvn --version'
-            }
-        }
-
-      stage('checkout') {
+         stage('checkout') {
            steps {
              
                 git branch: 'master', url: 'https://github.com/devops4solutions/CI-CD-using-Docker.git'
